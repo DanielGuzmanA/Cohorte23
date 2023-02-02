@@ -1,0 +1,19 @@
+#dato0{
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+    text-align: center;
+}
+.pato{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align-last: center;
+    background-color: cyan;
+}
+#dato1{
+    color: aqua;
+    text-align: center;
+    font-size: 1cm;
+}
+div{
+    height: 400px;
+    width: 400px;
+}
