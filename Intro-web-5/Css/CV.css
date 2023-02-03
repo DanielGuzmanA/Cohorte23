@@ -1,0 +1,63 @@
+body{
+    font-family: "open sans", arial, tahoma;
+    font-weight: 900;
+    font-size: 12px;
+    color: rgb(252, 143, 0);
+    background: rgb(0, 0, 0);
+}
+
+/* HEADER */
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: rgb(255, 0, 0) 2px 2px, rgb(255, 0, 0) 2px 2px;
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+}
+
+h1 span{
+    color: aqua;
+}
+
+#photo-header{
+    text-align: center;
+    border-bottom-color:rgb(252, 143, 0);
+}
+
+#photo img{
+background-color: aqua;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+}
+
+h3{
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+}
+
+.container{
+    max-width: 1500px;
+    background: rgb(0, 55, 104);
+    margin-top: 20px;
+    margin-left: 3cm;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.menu ul{
+    text-align: center;
+    margin: auto; padding: 0%;
+    list-style-type: none;
+}
+.menu ul li{
+display: inline-block;
+position: relative;
+}
+.menu ul li a{
+background-color: black;
+color: aliceblue;
+font-size: 10px;
+text-decoration: none;
+display: block;
+padding: 3px;
+}
