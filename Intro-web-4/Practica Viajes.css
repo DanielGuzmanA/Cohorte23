@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    font-size: 2cm;
+    background-color: rgb(25, 86, 155);
+}
+
+body{
+    background-image: url("./Assets/por-que-los-aviones-vuelan-a-esa-altura.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: rgb(3, 0, 0);
+}
