@@ -1,63 +1,191 @@
 body{
-    font-family: "open sans", arial, tahoma;
-    font-weight: 900;
-    font-size: 12px;
-    color: rgb(252, 143, 0);
-    background: rgb(0, 0, 0);
+    font-family: "open sans", arial, tahoma; /*define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado. A diferencia de la mayoría de las propiedades CSS, los valores se separan con comas (",") para indicar que son valores alternativos.*/
+    font-weight: 900; /*especifica el peso o grueso de la letra. Algunos tipos de letra sólo están disponibles en normal y bold.*/
+    font-size: 12px; /*especifica la dimensión de la letra. Este tamaño puede, a su vez, alterar el aspecto de alguna otra cosa, ya que se usa para calcular la longitud de las unidades em y ex.*/
+    color: rgb(252, 143, 0); /*proporciona un elemento de interfaz de usuario que permite a los usuarios especificar un color*/
+    background: rgb(16, 88, 169); /*es un atajo para definir los valores individuales del fondo en una única regla CSS. Se puede usar background para definir los valores de una o de todas las propiedades siguientes: background-attachment, color, image, position, repeat.*/
 }
 
 /* HEADER */
 h1{
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: rgb(255, 0, 0) 2px 2px, rgb(255, 0, 0) 2px 2px;
-    border-bottom-style: double;
-    border-bottom-width: 5px;
+    text-transform: uppercase; /*especifica el cambio entre mayúsculas y minúsculas del texto de un elemento. Puede ser usada para que un texto aparezca completamente en mayúsculas, en minúsculas, o con la primera letra de cada palabra en mayúscula*/
+    text-align: center; /*acomoda el texto*/
+    text-shadow: rgb(255, 0, 0) 2px 2px, rgb(255, 0, 0) 2px 2px; /*agrega sombra al texto. Acepta una lista de sombras separadas por coma, para aplicarlas al texto y a la propiedad text-decorations del elemento.*/
+    border-bottom-style: double; /*define el estilo de línea del borde inferior de una caja.*/
+    border-bottom-width: 5px; /*define el ancho del borde inferior de una caja.*/
 }
 
 h1 span{
-    color: aqua;
+    color: aqua; /*proporciona un elemento de interfaz de usuario que permite a los usuarios especificar un color*/
 }
 
 #photo-header{
-    text-align: center;
-    border-bottom-color:rgb(252, 143, 0);
+    text-align: center; /*acomoda el texto*/
+    border-bottom-color:rgb(252, 143, 0); /*define el color del borde inferior de un elemento, con la ayuda de un valor de color o con la palabra clave transparent.*/
 }
 
 #photo img{
-background-color: aqua;
-height: 150px;
-width: 150px;
-border-radius: 50%;
+    background-color: aqua; /*es un propiedad de CSS que define el color de fondo de un elemento, puede ser el valor de un color o la palabra clave transparent.*/
+    height: 150px; /*especifica la altura de un elemento. Por defecto, la propiedad define la altura del área de contenido. Sin embargo, si box-sizing está configurado como border-box, determina la altura del área de borde.*/
+    width: 150px; /*especifica la anchura del area de contenido de un elemento. De forma predeterminada, establece el ancho del área de contenido, pero si el box-sizing se establece en border-box, establece el ancho del área del borde.*/
+    border-radius: 50%; /*genera un efecto el cual se ven los bordes redondos*/
 }
 
 h3{
-    border-bottom-style: double;
-    border-bottom-width: 5px;
+    border-bottom-style: double; /*define el estilo de línea del borde inferior de una caja.*/
+    border-bottom-width: 5px; /*define el ancho del borde inferior de una caja.*/
 }
 
 .container{
     max-width: 1500px;
-    background: rgb(0, 55, 104);
-    margin-top: 20px;
+    background: rgb(0, 55, 104); /*es un atajo para definir los valores individuales del fondo en una única regla CSS. Se puede usar background para definir los valores de una o de todas las propiedades siguientes: background-attachment, color, image, position, repeat.*/
+    margin-top: 20px; /*establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).*/
     margin-left: 3cm;
     margin-right: auto;
-    margin-bottom: auto;
+    margin-bottom: 30px;
 }
 .menu ul{
-    text-align: center;
+    text-align: center; /*acomoda el texto*/
     margin: auto; padding: 0%;
-    list-style-type: none;
+    padding: 0%; /*establece el área de relleno en los cuatro lados de un elemento a la vez.*/
+    list-style-type: none; /*especifica la apariencia del listado.*/
 }
 .menu ul li{
-display: inline-block;
-position: relative;
+    display: inline-block; /*especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible)*/
+    position: relative; /*especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.*/
 }
 .menu ul li a{
-background-color: black;
-color: aliceblue;
-font-size: 10px;
-text-decoration: none;
-display: block;
-padding: 3px;
+    background-color: black; /*es un propiedad de CSS que define el color de fondo de un elemento, puede ser el valor de un color o la palabra clave transparent.*/
+    color: aliceblue; /*proporciona un elemento de interfaz de usuario que permite a los usuarios especificar un color*/
+    font-size: 10px; /*especifica la dimensión de la letra. Este tamaño puede, a su vez, alterar el aspecto de alguna otra cosa, ya que se usa para calcular la longitud de las unidades em y ex.*/
+    text-decoration: none; /*se usa para establecer el formato de texto a subrayado (underline) y suprarrayado (overline), tachado (line-through) o parpadeo (blink). El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través de éste se posiciona por encima.*/
+    display: block; /*especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible)*/
+    padding: 8px; /*establece el área de relleno en los cuatro lados de un elemento a la vez.*/
+    border-radius: 50px;
+}
+.menu ul li ul{
+    position: absolute; /*especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados.*/
+    top: 25px;
+    left: 0;
+    list-style-type: none; /*especifica la apariencia del listado.*/
+    display: none; /*especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible)*/
+    height: auto; /*especifica la altura de un elemento. Por defecto, la propiedad define la altura del área de contenido. Sin embargo, si box-sizing está configurado como border-box, determina la altura del área de borde.*/
+}
+.menu ul li:hover ul{
+    display: block; /*especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible)*/
+}
+.menu ul li ul li{
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+}
+h2{
+    color: aqua;
+    text-transform: uppercase;
+}
+h2::before{ /*crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.*/
+    content: "// // ";   
+}
+.clearfix:before{
+    display: table;
+    line-height: 1;
+    content: "/";
+}
+.pull-left{
+    float: left;
+}
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-60{
+    width: 60%;
+}
+.col-40{
+    width: 60%;
+}
+.col-10{
+    width: 10%;
+}
+.col-90{
+    width: 90%;
+}
+.containerflex{
+    display: flex;
+}
+.education ul{
+    list-style: none;
+    margin:0;
+    padding: 0; 
+}
+.education .year {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+    
+.education .description {
+    background: #05314f;
+    border-bottom: 3px solid #000000;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    box-sizing: border-box; 
+    border-radius: 40px;
+}
+
+.education .description h4, .education .description p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.education .description p::after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent ;
+    border-right: 8px solid #05314f;
+    top: 1px;
+    left: -18px;
+}
+.experience .job .where{
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+.year{
+    font-size: 1em;
+}
+.profesion{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 4em;
+    font-size: 1em;
+    text-align: justify;
+}
+.description{
+    margin-top: 0;
+    margin-left: 4em;
+    text-align: justify;
+}
+.containerskill[data-parcent="80"]{
+    width: 100%;
+    background-color: aliceblue;
+    margin-left: 59%;
+}
+.skills{
+    margin: 0;
+    padding: 0;
+}
+.html{
+    width: 90%; background-color: blanchedalmond;
+}
+.css{
+    width: 80%; background-color: aqua;
+}
+.js{
+    width: 65%; background-color: black;
+}
+.phyton{
+   width: 60%; background-color: brown;
 }
