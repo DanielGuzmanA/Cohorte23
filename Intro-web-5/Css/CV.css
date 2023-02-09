@@ -89,103 +89,190 @@ h2{
 h2::before{ /*crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.*/
     content: "// // ";   
 }
-.clearfix:before{
+
+  .clearfix:before{
     display: table;
     line-height: 1;
-    content: "/";
-}
-.pull-left{
-    float: left;
-}
-.row{
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    content: "";
+ } 
+
+
+
+ .pull-left{
+    float:left
+ }
+
+ .row{
+    padding-left: 20px;
+    padding-right: 20px;
+ }
 .col-60{
     width: 60%;
 }
-.col-40{
-    width: 60%;
-}
+
 .col-10{
     width: 10%;
 }
+.col-20{
+    width: 20%;
+}
+
+.col-40{
+    width: 40%;
+}
+
+.col-80{
+    width: 80;
+}
+
 .col-90{
     width: 90%;
 }
-.containerflex{
-    display: flex;
-}
+
+
+
+/***************/
+
 .education ul{
     list-style: none;
     margin:0;
-    padding: 0; 
+    padding: 0;	
 }
-.education .year {
-    font-size: 1.6em;
-    font-weight: bold;
-}
+    .education .year {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
     
-.education .description {
+    .education .description {
+        background: #05314f;
+        border-bottom: 3px solid #000000;
+        padding: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        box-sizing: border-box; 
+        border-radius: 40px;
+    }
+
+    .education .description h3, .education .description p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .education .description p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid transparent ;
+        border-right: 8px solid #EEEEEE ;
+        top: 5px;
+        left: -16px;
+    }
+
+
+    .experience .job .where{
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .year{
+        font-size: 0.9em ;
+    }
+
+    .profesion{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2em;
+        font-size: 0.9em;
+        text-align:justify;
+    }
+    .description{
+        margin-top: 0;
+        margin-left: 2em;
+        text-align: justify;
+
+    }
+
+    /* .skills {
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+	}
+		.skills-item {				
+			color: #FFFFFF;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 2px 0 2px 5px;
+			margin-top: 5px;				
+			background: #F0563D;
+			
+		}
+		.skills-item[data-percent="10"] { width: 10% }
+		.skills-item[data-percent="20"] { width: 20% }
+		.skills-item[data-percent="30"] { width: 30% }
+		.skills-item[data-percent="40"] { width: 40% }
+		.skills-item[data-percent="50"] { width: 50% }
+		.skills-item[data-percent="60"] { width: 60% }
+		.skills-item[data-percent="70"] { width: 70% }
+		.skills-item[data-percent="80"] { width: 80% }
+		.skills-item[data-percent="90"] { width: 90% } */
+
+               
+          
+     .html { 
+        color: #DDDDDD;
+        margin: 3px;
+        list-style-type: none; 
+        text-align: right; 
+        width: 90%; 
+        background-color: #04AA6D;}
+.css { color: #DDDDDD;
+    margin: 3px;
+    list-style-type: none; 
+    text-align: right;
+    width: 80%; 
+    background-color: #2196F3;
+}
+.js { 
+    color: #DDDDDD;
+    margin: 3px;
+    list-style-type:none; 
+    text-align: right;
+    width: 65%; 
+    background-color: #f44336;
+}
+.python { 
+    color: #DDDDDD;
+    margin: 3px;
+    list-style-type: none;
+    text-align: right; 
+    width: 60%; 
+    background-color: #808080;
+}
+
+
+.icon-star{
+    background: url(../Imgs/star-grey.png)no-repeat;
+    width: 110px;
+    height: 14px;
+    float: right;
+}
+.icon-star-red{
+    background: url(../Imgs/star-red.png)no-repeat;
+    width: 110px;
+    height: 14px;
+    float: right;
+}
+.obj-start{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px;
+}
+.hobby{
     background: #05314f;
-    border-bottom: 3px solid #000000;
-    padding: 15px;
-    margin-bottom: 10px;
-    position: relative;
-    box-sizing: border-box; 
-    border-radius: 40px;
+    color: #fafafa;
+    padding: 8px;
+    border-radius: 40%;
 }
-
-.education .description h4, .education .description p{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.education .description p::after {
-    content: "";
-    position: absolute;
-    border: 10px solid transparent ;
-    border-right: 8px solid #05314f;
-    top: 1px;
-    left: -18px;
-}
-.experience .job .where{
-    font-size: 1.2em;
-    font-weight: bold;
-
-}
-.year{
+.footer p{
+    text-align: right;
     font-size: 1em;
-}
-.profesion{
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 4em;
-    font-size: 1em;
-    text-align: justify;
-}
-.description{
-    margin-top: 0;
-    margin-left: 4em;
-    text-align: justify;
-}
-.containerskill[data-parcent="80"]{
-    width: 100%;
-    background-color: aliceblue;
-    margin-left: 59%;
-}
-.skills{
-    margin: 0;
-    padding: 0;
-}
-.html{
-    width: 90%; background-color: blanchedalmond;
-}
-.css{
-    width: 80%; background-color: aqua;
-}
-.js{
-    width: 65%; background-color: black;
-}
-.phyton{
-   width: 60%; background-color: brown;
+    border-top: 1px solid floralwhite;
 }
