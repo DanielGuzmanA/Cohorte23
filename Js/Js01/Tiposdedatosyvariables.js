@@ -1,15 +1,5 @@
-var nombre= "Daniel";
-var edad=30;
-var tengomascotas=true;
-var tengrotrabajo=false;
-var tengosueldo; //undefinided
-
-let nombre= "Daniel";
-let edad=30;
-let tengomascotas=true;
-let tengrotrabajo=false;
-let tengosueldo; //undefinided
-
+horas();
+imc();
 
 //Ejercicio 1
 function horas(){
