@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+}
+h2{
+    text-align: center;
+    text-shadow: 3px 0 rgb(85, 22, 22), 3px 0 rgb(182, 126, 126);
+    color: brown;
+}
