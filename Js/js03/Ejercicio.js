@@ -37,7 +37,7 @@ let q = true;
 let p = true;
 if (q && p) console.log(" true")
 
-//OR ""
+//OR "||"
 //VERDADERO SI CUALQUIERA DE LOS ELEMENTOS ES VERDADERO
 let a = false;
 let b = true;

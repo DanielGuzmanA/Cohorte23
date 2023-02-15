@@ -1,11 +1,21 @@
 let lista = [12,5,80,34,7];
+
+// Multiplica "map"
+let lnueva = lista.map(
+    function(valor){
+        return valor * 2
+    }
+);
+console.log(lnueva);
+
+
+// Ordena del menor al mayor "valor 2 - valor 1 los ordena de mayor a menor"
 lista.sort(
     function(valor1,valor2){
-        return valor1 > valor2;
+        return valor1 - valor2;
     }
 );
 console.log(lista);
-
 
 // Los ordena en orden al primer digito
 lista.sort();
