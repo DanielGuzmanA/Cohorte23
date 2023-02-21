@@ -24,4 +24,4 @@ console.log(obj2.sumar(5,6));
 
 let obj1;
 obj1 = new operacionesAritmeticas();
-console.log(obj1.numero0)
+console.log(obj1.numero0);

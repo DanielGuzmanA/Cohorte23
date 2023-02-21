@@ -1,0 +1,14 @@
+{
+  "name": "Js09",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto en NPM, andamos con todo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Guzman Alonso",
+  "license": "ISC",
+  "dependencies": {
+    "parrotsay-api": "^0.1.1"
+  }
+}
