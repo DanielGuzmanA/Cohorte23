@@ -18,3 +18,4 @@ fetch(url)
         document.getElementById('data').innerHTML = body
         //console.log(body)
     }
+    document.getElementsByTagName
