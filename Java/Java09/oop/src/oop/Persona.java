@@ -5,7 +5,7 @@ public class Persona {
 	private int edad;
 	private double altura;
 	private double peso;
-	private String sodiacal;
+	private String zodiacal;
 	/*
 	public Persona(int edad,String sodiacal) {
 		super();
@@ -14,17 +14,17 @@ public class Persona {
 	}
 	*/
 	public Persona(String nombre, int edad, double altura,
-			double peso, String sodiacal) {
+			double peso, String zodiacal) {
 			super();
 			this.nombre = nombre;
 			this.edad = edad;
 			this.altura = altura;
 			this.peso = peso;
-			this.sodiacal = sodiacal;
+			this.zodiacal = zodiacal;
 	}
 	
 	public String datosPersona() {
-		return this.nombre+""+this.edad+""+this.altura+""+this.sodiacal;
+		return this.nombre+""+this.edad+""+this.altura+""+this.zodiacal;
 	}
 	
 	public String getNombre() {
@@ -52,10 +52,10 @@ public class Persona {
 		this.peso = peso;
 	}
 	public String getSodiacal() {
-		return sodiacal;
+		return zodiacal;
 	}
-	public void setSodiacal(String sodiacal) {
-		this.sodiacal = sodiacal;
+	public void setSodiacal(String zodiacal) {
+		this.zodiacal = zodiacal;
 	}
 	
 	
