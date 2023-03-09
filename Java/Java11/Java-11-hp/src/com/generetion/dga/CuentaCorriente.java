@@ -1,5 +1,5 @@
 package com.generetion.dga;
 
-public class AlumnoP {
+public class CuentaCorriente {
 
 }
