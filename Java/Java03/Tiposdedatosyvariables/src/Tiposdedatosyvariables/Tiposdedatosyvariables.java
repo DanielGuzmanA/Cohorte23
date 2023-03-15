@@ -68,7 +68,7 @@ public class Tiposdedatosyvariables {
         String estaturaString = String.valueOf (estatura); 
         //y ahi mismo te da todos los valores que puedes utilizar para hacer conversion 
 
-        System.out.println("Edad: " + edadString + "Estatura: " + estaturaString);
+        System.out.println("Edad: " + edadString + " Estatura: " + estaturaString);
         
         int numero1 = 5;
         int numero2 = 7;
@@ -92,10 +92,10 @@ public class Tiposdedatosyvariables {
         
         //Ejercicio de masa corporal
         Scanner pesosc = new Scanner(System.in);
-        System.out.println ("Ingresa tu peso");
+        System.out.println ("Ingresa tu peso ");
         float peso = pesosc.nextFloat();
         Scanner alturasc= new Scanner(System.in);
-        System.out.println ("Ingresa tu altura");
+        System.out.println ("Ingresa tu altura ");
         float altura = alturasc.nextFloat();
 
         float IMC = peso / (altura * altura);

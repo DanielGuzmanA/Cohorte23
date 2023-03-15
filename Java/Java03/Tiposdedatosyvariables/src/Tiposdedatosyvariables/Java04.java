@@ -3,7 +3,7 @@ package Tiposdedatosyvariables;
 public class Java04 {
 	
 	int edad = 18;
-	boolean tieneLicencia = true;
+	boolean tieneLicencia = true;{
 		
 	if (edad >= 18 && tieneLicencia) {
 	    System.out.println("Puede conducir un coche");
