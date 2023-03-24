@@ -9,54 +9,45 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "usuario")
-
 public class UsuarioModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(unique = true, nullable = false)
-	private String Nombre;
-	private String Email;
-	private long Id;
-	private Integer Prioridad;
+	private long id;
+	private String nombre;
+	private String email;
+	private Integer prioridad;
 
-	public UsuarioModel(String nombre, String email, long id, Integer prioridad) {
-		super();
-		Nombre = nombre;
-		Email = email;
-		Id = id;
-		Prioridad = prioridad;
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
-	}
-
-	public long getId() {
-		return Id;
-	}
-
-	public void setId(long id) {
-		Id = id;
+		this.email = email;
 	}
 
 	public Integer getPrioridad() {
-		return Prioridad;
+		return prioridad;
 	}
 
 	public void setPrioridad(Integer prioridad) {
-		Prioridad = prioridad;
+		this.prioridad = prioridad;
 	}
 
 }
