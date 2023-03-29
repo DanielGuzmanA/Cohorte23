@@ -1,21 +1,36 @@
 package com.generetion.ecommerce.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity //Indico que mi clase producto se convierte en una entidad JPA (persistencia de datos)
+
+@Table(name = "Producto") //Especificar de la forma correcta el nombre de la tabla
+
 public class Producto {
 
-	//Atributos
+	@Id//el campo id es la primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //el campo id sera generado automaticamente por la DB
+    @Column(name="id", unique = true, nullable = false) //especifica el nombre de la columna en la DB
+	
+	// Atributos
 	private Long id;
 	private String nombre;
 	private String descripccion;
 	private String URL_Imagen;
 	private double precio;
 
-	
-	//Constructor vacio para el Jackson (serealizar y desearilizar  un objeto Java a Json)
+	// Constructor vacio para el Jackson (serealizar y desearilizar un objeto Java a
+	// Json)
 	public Producto() {
-		
+
 	}
 
-	//Constructor con todos los campos
+	// Constructor con todos los campos
 	public Producto(Long id, String nombre, String descripccion, String uRL_Imagen, double precio) {
 		this.id = id;
 		this.nombre = nombre;
@@ -23,8 +38,8 @@ public class Producto {
 		this.URL_Imagen = URL_Imagen;
 		this.precio = precio;
 	}
-	
-	//Getters y Setters
+
+	// Getters y Setters
 	public Long getId() {
 		return id;
 	}
@@ -64,13 +79,12 @@ public class Producto {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-	
-	//toString
+
+	// toString
 	@Override
 	public String toString() {
-		return null;
+		return "Producto [id=" + id + ", nombre=" + nombre + ", descripccion=" + descripccion + ",URL_Imagen"
+				+ URL_Imagen + ", precio=" + precio + "j";
 	}
-	
-	
-	
+
 }
