@@ -3,15 +3,21 @@ package com.generetion.ecommerce.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.generetion.ecommerce.model.Producto;
 import com.generetion.ecommerce.services.ProductoService;
+
+@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE,
+        RequestMethod.PUT })
 
 
 @RestController  //que eres un controller para soportar metodos http
@@ -40,14 +46,15 @@ public class ProductoController {
 	public List<Producto> getProductos(){
 		return productoServicio.leerProducto();
 	}
-}
-/*
-	// HTTP POST
-	@PostMapping
-	public postProducto() {
-		return productoServicio.crearProducto();
-	}
 
+
+	//HTTP POST
+    @PostMapping
+    public void postProducto(@RequestBody Producto prod) {
+        productoServicio.crearProducto(prod);
+    }
+
+/*
 	// HTTP PUT
 	@PutMapping
 	public putProducto() {
@@ -59,6 +66,5 @@ public class ProductoController {
 	public deleteProducto() {
 		return productoServicio.borrarProducto();
 	}
-
-}
 */
+}

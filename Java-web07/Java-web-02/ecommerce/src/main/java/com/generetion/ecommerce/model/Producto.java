@@ -24,8 +24,7 @@ public class Producto {
 	private String URL_Imagen;
 	private double precio;
 
-	// Constructor vacio para el Jackson (serealizar y desearilizar un objeto Java a
-	// Json)
+	// Constructor vacio para el Jackson (serealizar y desearilizar un objeto Java a Json)
 	public Producto() {
 
 	}

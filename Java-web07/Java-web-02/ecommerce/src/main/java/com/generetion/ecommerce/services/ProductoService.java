@@ -1,6 +1,7 @@
 package com.generetion.ecommerce.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,11 +24,16 @@ public class ProductoService {
 		this.productoRepository = productoRepository;
 	}
 
-	// Create (Metodo para agregar un objeto del tipo producto y guardarlo en la
-	// base de datos)
-	public void crearProducto() {
+//Create (Metodo para agregar un objeto del tipo Producto y guardarlo en la base de datos. Si el producto existe, no deberia actualizar la Base de datos porque seria un objeto duplicado.
 
-	}
+	public void crearProducto(Producto prod) { // objeto del tipo producto
+		Optional<Producto> productoBuscado = productoRepository.findByNombre(prod.getNombre());
+		if (productoBuscado.isPresent()) {
+			throw new IllegalStateException("El producto con el nombre " + "[" + prod.getNombre() + "] ya existe.");
+		} else {
+			productoRepository.save(prod);
+		} // else //if
+	}// addProducto
 
 	// Read (Leer una lista de productos)
 	public List<Producto> leerProducto() {
